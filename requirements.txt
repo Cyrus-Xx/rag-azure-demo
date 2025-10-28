@@ -1,4 +1,4 @@
-Flask==3.10.3
+Flask>=3.0.0,<4.0.0
 dashscope==1.19.0
 langchain==0.2.12
 langchain-community>=0.2.10,<0.3.0
@@ -7,4 +7,4 @@ pypdf==4.2.0
 sentence-transformers==3.0.1
 faiss-cpu==1.8.0.post1
 python-dotenv==1.0.1
-pytest==8.3.0   # ← 新增这一行
+pytest==8.3.0
