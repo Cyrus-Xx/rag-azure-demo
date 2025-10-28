@@ -15,7 +15,7 @@ dashscope.api_key = os.getenv("DASHSCOPE_API_KEY")
 # dashscope.api_key ='sk-ef9da958302f488b946da484bb824de3'
 
 # === 预加载 PDF（放在项目根目录）===
-loader = PyPDFLoader("/Users/xing/Downloads/task3_short.pdf")  # ← 你自己的 PDF
+loader = PyPDFLoader("manual.pdf")  # ← 你自己的 PDF
 docs = loader.load()
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=800, chunk_overlap=100)
 splits = text_splitter.split_documents(docs)
