@@ -1,10 +1,15 @@
+# 显式指定 CPU 版本的 PyTorch（sentence-transformers 的依赖）
+torch==2.4.0+cpu
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+# 其他依赖
+sentence-transformers==3.0.1
+faiss-cpu==1.8.0.post1
 Flask>=3.0.0,<4.0.0
 dashscope==1.19.0
 langchain==0.2.12
 langchain-community>=0.2.10,<0.3.0
 langchain-text-splitters>=0.2.0,<0.3.0
 pypdf==4.2.0
-sentence-transformers==3.0.1
-faiss-cpu==1.8.0.post1
 python-dotenv==1.0.1
 pytest==8.3.0
